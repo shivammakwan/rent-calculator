@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Breakdown</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Payment Breakdown Calculator</h2>
+
+        <label for="rent">Enter Rent Amount (₹):</label>
+        <input type="number" id="rent" placeholder="Enter rent amount">
+
+        <label for="depositMonths">Deposit Months:</label>
+        <input type="number" id="depositMonths" name="depositMonths" required>
+
+        <label for="ratio">Select Ratio:</label>
+        <select id="ratio">
+            <option value="50">50:50</option>
+            <option value="75">75:25</option>
+        </select>
+
+        <button onclick="calculateBreakdown()">Calculate</button>
+
+        <div id="result">
+            <!-- The result will be dynamically printed here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
